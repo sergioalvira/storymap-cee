@@ -12,10 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/mapbox-gl-globe-minimap@1.2.0/dist/bundle.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <style>
+        @import url(fontawesome-all.min.css);
+        @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family: "Source Sans Pro", Helvetica, sans-serif;
         }
 
         a,
@@ -36,13 +38,14 @@
             width: 100%;
             position: relative;
             z-index: 5;
+            background-color: #6e6e6ed8;
         }
 
         #header h1,
         #header h2,
         #header p {
             margin: 0;
-            padding: 2vh 2vw;
+            padding: 1vh 2vw;
             text-align: center;
         }
 
@@ -56,6 +59,7 @@
             font-size: 13px;
             position: relative;
             z-index: 5;
+            opacity: 0.9;
         }
 
         #features {
@@ -94,7 +98,7 @@
 
         .dark {
             color: #fafafa;
-            background-color: #444;
+            background-color: #6e6e6ed8;
         }
 
         .step {
@@ -104,7 +108,7 @@
         }
 
         .step.active {
-            opacity: 0.9;
+            opacity: 0.99;
         }
 
         .step div {
